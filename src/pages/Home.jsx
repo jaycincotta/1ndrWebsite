@@ -7,10 +7,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="home">
       <h1>Welcome!</h1>
       <div>
-        <img style={{ width: "100%" }} alt="" src="https://unsplash.it/1000" />
+        <img style={{ height: "60vh" }} alt="" src="/assets/palette.jpeg" />
       </div>
     </div>
   );

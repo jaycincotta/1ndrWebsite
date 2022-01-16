@@ -1,0 +1,71 @@
+/******************************************
+ Gestures of Love Palette
+*******************************************/
+:root {
+  --paletteA1: rgb(218, 217, 222);
+  --paletteA2: rgb(253, 163, 113);
+  --paletteA3: rgb(219, 174, 215);
+  --paletteA4: rgb(110, 181, 223);
+  --paletteA5: rgb(0, 140, 153);
+  --paletteA6: rgb(28, 168, 193);
+  --paletteA7: rgb(128, 142, 203);
+  --paletteA8: rgb(81, 83, 134);
+  --paletteB1: rgb(207, 217, 226);
+  --paletteB2: rgb(254, 180, 105);
+  --paletteB3: rgb(154, 216, 231);
+  --paletteB4: rgb(0, 135, 167);
+  --paletteB5: rgb(117, 196, 165);
+  --paletteB6: rgb(3, 158, 202);
+  --paletteB7: rgb(181, 117, 167);
+  --paletteB8: rgb(29, 34, 64);
+  --paletteC1: rgb(253, 234, 168);
+  --paletteC2: rgb(232, 122, 105);
+  --paletteC3: rgb(122, 199, 219);
+  --paletteC4: rgb(74, 160, 211);
+  --paletteC5: rgb(170, 216, 187);
+  --paletteC6: rgb(180, 184, 222);
+  --paletteC7: rgb(136, 92, 143);
+  --paletteD1: rgb(254, 220, 130);
+  --paletteD2: rgb(217, 192, 222);
+  --paletteD3: rgb(100, 195, 215);
+  --paletteD4: rgb(0, 135, 125);
+  --paletteD5: rgb(3, 111, 113);
+  --paletteD6: rgb(135, 193, 230);
+  --paletteD7: rgb(128, 142, 203);
+
+  /* Main Colors */
+  --palette1: var(--paletteB3);
+  --palette2: var(--paletteA6);
+  --palette3: var(--paletteB8);
+  --palette4: var(--paletteA5);
+  --palette5: var(--paletteC1);
+  --palette6: var(--paletteD2);
+}
+
+:root {
+  --nav-bg-color: var(--palette4);
+  --nav-fg-color: var(--paletteD1);
+  --nav-title-color: var(--paletteC5);
+  --nav-active-color: var(--paletteA6);
+  --nav-hover-color: var(--paletteB6);
+  --main-bg-color: var(--palette5);
+  --main-fg-color: var(--palette5);
+  --main-p-color: var(--palette3);
+  --footer-bg-color: var(--paletteD5);
+  --footer-fg-color: var(--paletteB1);
+}
+
+/* Fonts 
+  auto-mission-regular
+  doobie-regular
+  retro-mono-wide-regular
+  apple-garamond-regular
+  apple-garamond-bold
+  */
+:root {
+  --font-body: "apple-garamond";
+  --font-nav: "doobie-regular";
+  --font-title: "auto-mission-regular";
+  --font-heading: "doobie-regular";
+  --font-footer: "retro-mono-wide-regular";
+}

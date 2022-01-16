@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./styles.css";
 import { Router, Link } from "@reach/router";
 import Burger from "./widgets/BurgerMenu";
 import Home from "./pages/Home";
@@ -7,6 +6,8 @@ import Portfolio from "./pages/Portfolio";
 import Shop from "./pages/Shop";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import "./styles/theme.css";
+import "./styles/styles.css";
 
 const NavLink = (props) => (
   <Link
