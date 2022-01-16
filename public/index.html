@@ -25,57 +25,6 @@
       sizes="16x16"
       href="%PUBLIC_URL%/favicon-16x16.png"
     />
-    <!-- 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Neucha&family=Permanent+Marker&display=swap"
-      rel="stylesheet"
-    />
-    -->
-    <!-- font-family: 'auto-mission-regular', sans-serif; 
-    <link
-      href="https://www.dafontfree.net/embed/YXV0by1taXNzaW9uLXJlZ3VsYXImZGF0YS85L2EvNTA1NzgvQXV0byBNaXNzaW9uLm90Zg"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <!-- font-family: 'doobie-regular', sans-serif; 
-    <link
-      href="https://www.dafontfree.net/embed/ZG9vYmllLXJlZ3VsYXImZGF0YS8zNy9kLzEyMDkyOS9kb29iaWUudHRm"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <!-- font-family: 'retro-mono-wide-regular', sans-serif; 
-    <link
-      href="https://www.dafontfree.net/embed/cmV0cm8tbW9uby13aWRlLXJlZ3VsYXImZGF0YS8xNS9yLzcyNDcyL1JldHJvIE1vbm8gV2lkZS50dGY"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <!-- font-family: 'apple-garamond-regular', sans-serif;
-    <link
-      href="https://www.dafontfree.net/embed/YXBwbGUtZ2FyYW1vbmQtcmVndWxhciZkYXRhLzUvYS8yMTQyMC9BcHBsZUdhcmFtb25kLnR0Zg"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- font-family: 'apple-garamond-bold', sans-serif;
-    <link
-      href="https://www.dafontfree.net/embed/YXBwbGUtZ2FyYW1vbmQtYm9sZCZkYXRhLzUvYS8yMTQyMS9BcHBsZUdhcmFtb25kLUJvbGQudHRm"
-      rel="stylesheet"
-      type="text/css"
-    />
-    -->
 
     <link
       rel="preload"
@@ -141,6 +90,81 @@
       type="font/woff"
       crossorigin="anonymous"
     />
+
+    <style>
+      @font-face {
+        font-family: "apple-garamond";
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap; /* Read next point */
+        unicode-range: U+000-5FF; /* Download only latin glyphs */
+        src: local("apple-garamond"),
+          url("/fonts/AppleGaramond-Bold.woff") format("woff");
+      }
+      @font-face {
+        font-family: "apple-garamond";
+        font-weight: bold;
+        font-style: italic;
+        font-display: swap; /* Read next point */
+        unicode-range: U+000-5FF; /* Download only latin glyphs */
+        src: local("apple-garamond"),
+          url("/fonts/AppleGaramond-BoldItalic.woff") format("woff");
+      }
+      @font-face {
+        font-family: "apple-garamond";
+        font-weight: 200;
+        font-style: normal;
+        font-display: swap; /* Read next point */
+        unicode-range: U+000-5FF; /* Download only latin glyphs */
+        src: local("apple-garamond"),
+          url("/fonts/AppleGaramond-Light.woff") format("woff");
+      }
+      @font-face {
+        font-family: "apple-garamond";
+        font-weight: 200;
+        font-style: italic;
+        font-display: swap; /* Read next point */
+        unicode-range: U+000-5FF; /* Download only latin glyphs */
+        src: local("apple-garamond"),
+          url("/fonts/AppleGaramond-LightItalic.woff") format("woff");
+      }
+      @font-face {
+        font-family: "apple-garamond";
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap; /* Read next point */
+        unicode-range: U+000-5FF; /* Download only latin glyphs */
+        src: local("apple-garamond"),
+          url("/fonts/AppleGaramond.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "auto-mission-regular";
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap; /* Read next point */
+        unicode-range: U+000-5FF; /* Download only latin glyphs */
+        src: local("auto-mission-regular"),
+          url("/fonts/AutoMission.woff") format("woff");
+      }
+      @font-face {
+        font-family: "doobie-regular";
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap; /* Read next point */
+        unicode-range: U+000-5FF; /* Download only latin glyphs */
+        src: local("doobie"), url("/fonts/Doobie.woff") format("woff");
+      }
+      @font-face {
+        font-family: "retro-mono-wide-regular";
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap; /* Read next point */
+        unicode-range: U+000-5FF; /* Download only latin glyphs */
+        src: local("retro-mono-wide-regular"),
+          url("/fonts/RetroMonoWide.woff") format("woff");
+      }
+    </style>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
