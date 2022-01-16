@@ -12,7 +12,7 @@ body {
 h1 {
   font-family: var(--font-heading), sans-serif;
   font-weight: normal;
-  color: var(--main-p-color);
+  color: var(--nav-active-fg-color);
   font-size: 3rem;
 }
 h1.title {
@@ -97,16 +97,17 @@ footer a {
 .navbar li:hover,
 .navbar li a:hover {
   border-radius: 9999px; /* trick for pill shape */
-  opacity: 0.75;
+  /* opacity: 0.75; */
   background-color: var(--nav-hover-color);
 }
 .navbar li a.active,
 li a.active:hover {
-  opacity: 1;
-  background-color: var(--nav-active-color);
-  color: var(--paletteC2);
+  background-color: var(--nav-active-bg-color);
+  color: var(--nav-active-fg-color);
 }
-
+li a.active:hover {
+  opacity: 0.75;
+}
 .burger {
   position: absolute;
   top: 2rem;
