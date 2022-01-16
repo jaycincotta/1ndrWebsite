@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import portfolio from "../portfolio";
 
 export default function Portfolio() {
   // Always scroll to top on initial render
@@ -6,44 +7,28 @@ export default function Portfolio() {
     window.scrollTo(0, 0);
   }, []);
 
-  const Image = ({ src }) => {
-    return <img height="240" width="300" loading="lazy" alt="" src={src} />;
-  };
+  const getTitle = (art) => (
+    <h2>
+      {art.title}
+      <span>
+        {art.height}"H&nbsp;x&nbsp;{art.width}W&nbsp;x&nbsp;{art.depth}"D
+      </span>
+    </h2>
+  );
+  const getSrc = (art) => `portfolio/${art.name}.jpeg`;
 
   return (
     <>
       <h1>Portfolio</h1>
       <div className="gallery">
-        <img alt="" src="/portfolio/WatchingYouWatchingUs.jpeg" />
-        <img alt="" src="/portfolio/SelfPortrait.jpeg" />
-        <img alt="" src="/portfolio/TopographyForSeagulls.jpeg" />
-        <img alt="" src="/portfolio/FlyMyKite.jpeg" />
-        <div className="gallery">
-          {/* <Image src="https://unsplash.it/300/231" />
-        <Image src="https://unsplash.it/300/232" />
-        <Image src="https://unsplash.it/300/233" />
-        <Image src="https://unsplash.it/300/234" />
-        <Image src="https://unsplash.it/300/235" />
-        <Image src="https://unsplash.it/300/236" />
-        <Image src="https://unsplash.it/300/237" />
-        <Image src="https://unsplash.it/300/238" />
-        <Image src="https://unsplash.it/300/239" />
-        <Image src="https://unsplash.it/300/240" />
-        <Image src="https://unsplash.it/300/241" />
-        <Image src="https://unsplash.it/300/242" />
-        <Image src="https://unsplash.it/300/243" />
-        <Image src="https://unsplash.it/300/244" />
-        <Image src="https://unsplash.it/300/245" />
-        <Image src="https://unsplash.it/300/246" />
-        <Image src="https://unsplash.it/300/247" />
-        <Image src="https://unsplash.it/300/248" />
-        <Image src="https://unsplash.it/300/249" />
-        <Image src="https://unsplash.it/300/250" />
-        <Image src="https://unsplash.it/300/251" />
-        <Image src="https://unsplash.it/300/252" />
-        <Image src="https://unsplash.it/300/253" />
-        <Image src="https://unsplash.it/300/254" /> */}
-        </div>
+        {portfolio.map((art) => {
+          return (
+            <div>
+              {getTitle(art)}
+              <img alt={art.title} src={getSrc(art)} />
+            </div>
+          );
+        })}
       </div>
     </>
   );

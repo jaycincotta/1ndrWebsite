@@ -54,6 +54,7 @@
   --main-p-color: var(--palette3);
   --footer-bg-color: var(--paletteD5);
   --footer-fg-color: var(--paletteB1);
+  --link-fg-color: var(--paletteC4);
 }
 
 /* Fonts 

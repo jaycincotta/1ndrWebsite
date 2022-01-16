@@ -34,6 +34,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+a {
+  text-decoration: none;
+}
 
 .App {
   text-align: left;
@@ -50,8 +53,7 @@ img {
 .subtitle {
   font-size: 70%;
 }
-footer,
-footer a {
+footer {
   font-family: var(--font-footer), sans-serif;
   background: var(--footer-bg-color);
   color: var(--footer-fg-color);
@@ -62,6 +64,7 @@ footer a {
   font-family: var(--font-title);
   font-size: 1.5rem;
   color: var(--nav-fg-color);
+  margin-left: 1.5rem;
 }
 .navbar {
   background: var(--nav-bg-color);
@@ -83,15 +86,25 @@ footer a {
   display: flex;
   opacity: 1;
 }
+a {
+  color: var(--link-fg-color);
+  transition: all 0.5s ease;
+}
+a:hover {
+  background-color: var(--palette3);
+  padding: 0.25rem 1.25rem;
+  border-radius: 9999px;
+}
 
 .navbar li a {
   font-family: var(--font-nav), sans-serif;
-  text-decoration: none;
+  opacity: 0.75;
   color: var(--nav-fg-color);
   padding: 1rem;
   display: block;
   font-size: 2rem;
   border-radius: 9999px; /* trick for pill shape */
+  transition: all 1s ease-in-out;
 }
 
 .navbar li:hover,
@@ -99,14 +112,21 @@ footer a {
   border-radius: 9999px; /* trick for pill shape */
   /* opacity: 0.75; */
   background-color: var(--nav-hover-color);
+  transition: all 1s ease-in-out;
 }
 .navbar li a.active,
 li a.active:hover {
+  opacity: 1;
   background-color: var(--nav-active-bg-color);
   color: var(--nav-active-fg-color);
+  transition: all 1s ease-in-out;
+}
+li a:hover {
+  opacity: 0.75;
+  transition: opacity 0.25s ease-in-out;
 }
 li a.active:hover {
-  opacity: 0.75;
+  opacity: 1;
 }
 .burger {
   position: absolute;
@@ -135,16 +155,28 @@ li a.active:hover {
   flex-wrap: wrap;
 }
 .gallery img {
-  margin: 0rem auto 4rem auto;
+  margin: 0rem 4rem 4rem auto;
   box-shadow: 5px 10px 10px grey;
   max-height: 95vh;
 }
 
-.gallery img:hover {
-  border: 2px solid var(--main-fg-color);
+/* .gallery img:hover {
   cursor: pointer;
+  border: 2px solid var(--main-fg-color);
   opacity: 0.5;
   transition: opacity ease-out 250ms;
+} */
+
+.gallery h2 {
+  font-family: var(--font-footer);
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.75rem;
+}
+.gallery h2 span {
+  font-family: var(--font-body);
+  font-weight: normal;
+  margin-left: 2rem;
 }
 
 .about,
@@ -166,10 +198,6 @@ li a.active:hover {
 }
 .contact .email {
   font-style: normal;
-}
-
-.contact a {
-  text-decoration: none;
 }
 
 @media (max-width: 85rem) {

@@ -12,11 +12,12 @@ import "./styles/styles.css";
 const NavLink = (props) => (
   <Link
     {...props}
-    getProps={({ isCurrent }) => {
+    getProps={({ href, isCurrent, isPartiallyCurrent }) => {
       // the object returned here is passed to the
       // anchor element's props
       return {
-        className: isCurrent ? "active" : ""
+        className:
+          isCurrent || (isPartiallyCurrent && href !== "/") ? "active" : ""
       };
     }}
   />
