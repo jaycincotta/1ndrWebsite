@@ -110,16 +110,17 @@ a:hover {
 .navbar li:hover,
 .navbar li a:hover {
   border-radius: 9999px; /* trick for pill shape */
+  opacity: 1;
   /* opacity: 0.75; */
   background-color: var(--nav-hover-color);
-  transition: all 1s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 .navbar li a.active,
 li a.active:hover {
   opacity: 1;
   background-color: var(--nav-active-bg-color);
   color: var(--nav-active-fg-color);
-  transition: all 1s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 li a:hover {
   opacity: 0.75;
