@@ -46,8 +46,8 @@
   --nav-bg-color: var(--palette4);
   --nav-fg-color: var(--paletteD1);
   --nav-title-color: var(--paletteC5);
-  --nav-active-color: var(--paletteA6);
-  --nav-hover-color: var(--paletteB6);
+  --nav-active-color: var(--paletteC1);
+  --nav-hover-color: var(--paletteD5);
   --main-bg-color: var(--palette5);
   --main-fg-color: var(--palette5);
   --main-p-color: var(--palette3);

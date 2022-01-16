@@ -104,6 +104,7 @@ footer a {
 li a.active:hover {
   opacity: 1;
   background-color: var(--nav-active-color);
+  color: var(--paletteC2);
 }
 
 .burger {
@@ -115,7 +116,7 @@ li a.active:hover {
 }
 
 .content {
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   margin-top: 0;
 }
 
@@ -131,10 +132,9 @@ li a.active:hover {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 .gallery img {
-  margin: 2rem auto;
+  margin: 0rem auto 4rem auto;
   box-shadow: 5px 10px 10px grey;
   max-height: 95vh;
 }
@@ -149,9 +149,9 @@ li a.active:hover {
 .about,
 .contact,
 .home {
-  margin: 0 auto;
   max-width: 50rem;
-  width: 99%;
+  /* margin: 0 auto;
+  width: 99%; */
 }
 .contact p {
   font-size: 2rem;

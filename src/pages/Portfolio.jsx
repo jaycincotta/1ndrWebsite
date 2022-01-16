@@ -11,14 +11,15 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="gallery">
+    <>
       <h1>Portfolio</h1>
-      <img alt="" src="/portfolio/WatchingYouWatchingUs.jpeg" />
-      <img alt="" src="/portfolio/SelfPortrait.jpeg" />
-      <img alt="" src="/portfolio/TopographyForSeagulls.jpeg" />
-      <img alt="" src="/portfolio/FlyMyKite.jpeg" />
       <div className="gallery">
-        {/* <Image src="https://unsplash.it/300/231" />
+        <img alt="" src="/portfolio/WatchingYouWatchingUs.jpeg" />
+        <img alt="" src="/portfolio/SelfPortrait.jpeg" />
+        <img alt="" src="/portfolio/TopographyForSeagulls.jpeg" />
+        <img alt="" src="/portfolio/FlyMyKite.jpeg" />
+        <div className="gallery">
+          {/* <Image src="https://unsplash.it/300/231" />
         <Image src="https://unsplash.it/300/232" />
         <Image src="https://unsplash.it/300/233" />
         <Image src="https://unsplash.it/300/234" />
@@ -42,7 +43,8 @@ export default function Portfolio() {
         <Image src="https://unsplash.it/300/252" />
         <Image src="https://unsplash.it/300/253" />
         <Image src="https://unsplash.it/300/254" /> */}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
