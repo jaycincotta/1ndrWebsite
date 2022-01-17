@@ -6,8 +6,10 @@
 body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   font-family: var(--font-body), sans-serif;
+  scrollbar-gutter: stable both-edges;
+  scroll-behavior: smooth;
+  overflow: scroll;
 }
 h1 {
   font-family: var(--font-heading), sans-serif;
@@ -95,6 +97,14 @@ a:hover {
   padding: 0.25rem 1.25rem;
   border-radius: 9999px;
 }
+.gallery a:hover {
+  background-color: var(--paletteD1);
+  margin: 0;
+  padding: -1rem;
+  /* margin: 0.25rem 1rem 0 0; */
+  /* padding: 0.25rem 0rem 0rem 2rem; */
+  border-radius: 0;
+}
 
 .navbar li a {
   font-family: var(--font-nav), sans-serif;
@@ -140,6 +150,7 @@ li a.active:hover {
 .content {
   padding: 1rem 3rem;
   margin-top: 0;
+  scroll-behavior: smooth;
 }
 
 .content h1 {
@@ -156,17 +167,11 @@ li a.active:hover {
   flex-wrap: wrap;
 }
 .gallery img {
-  margin: 0rem 4rem 4rem auto;
+  margin: 0rem 4rem 2rem auto;
   box-shadow: 5px 10px 10px grey;
-  max-height: 95vh;
+  max-height: 90vh;
+  max-width: 90%;
 }
-
-/* .gallery img:hover {
-  cursor: pointer;
-  border: 2px solid var(--main-fg-color);
-  opacity: 0.5;
-  transition: opacity ease-out 250ms;
-} */
 
 .gallery h2 {
   font-family: var(--font-footer);
@@ -176,8 +181,13 @@ li a.active:hover {
 }
 .gallery h2 span {
   font-family: var(--font-body);
+  font-size: 1.25rem;
   font-weight: normal;
-  margin-left: 2rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+.gallery a {
+  margin: 0;
 }
 
 .about,

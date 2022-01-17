@@ -8,7 +8,7 @@ export default function Portfolio() {
   }, []);
 
   const getTitle = (art) => (
-    <h2>
+    <h2 className="flex">
       {art.title}
       <span>
         {art.height}"H&nbsp;x&nbsp;{art.width}W&nbsp;x&nbsp;{art.depth}"D
@@ -23,10 +23,12 @@ export default function Portfolio() {
       <div className="gallery">
         {portfolio.map((art) => {
           return (
-            <div>
-              {getTitle(art)}
-              <img alt={art.title} src={getSrc(art)} />
-            </div>
+            <a href={`#${art.name}`}>
+              <div id={art.name} onClick={(e) => e.target.scrollTo()}>
+                {getTitle(art)}
+                <img alt={art.title} src={getSrc(art)} />
+              </div>
+            </a>
           );
         })}
       </div>
