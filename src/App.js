@@ -28,7 +28,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <header className="navbar flex">
+      <header className="navbar">
         <div className="flex">
           <img
             className="logo"
