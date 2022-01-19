@@ -18,7 +18,7 @@ h1 {
   font-family: var(--font-heading), sans-serif;
   font-weight: normal;
   color: var(--nav-active-fg-color);
-  font-size: 3rem;
+  font-size: 2rem;
 }
 h1.title {
   color: var(--nav-title-color);
@@ -54,6 +54,7 @@ a:hover {
   text-align: left;
   display: flex;
   flex-direction: column;
+  background-image: url("/assets/paper.jpg");
   background-color: var(--main-bg-color);
   color: var(--main-fg-color);
   min-height: 98vh;
@@ -74,6 +75,7 @@ a:hover {
 **********************************************************/
 header {
   background: var(--nav-bg-color);
+  background-image: url("/assets/paper3.jpg");
   color: var(--nav-fg-color);
   text-align: center;
   width: 100%;
@@ -83,8 +85,8 @@ header {
 }
 header .title {
   font-family: var(--font-title), sans-serif;
-  font-size: 2rem;
-  line-height: 90%;
+  font-size: 1.25rem;
+  line-height: 120%;
 }
 header .subtitle {
   font-size: 70%;

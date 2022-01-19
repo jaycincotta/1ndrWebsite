@@ -43,18 +43,18 @@
 }
 
 :root {
-  --nav-bg-color: var(--palette4);
-  --nav-fg-color: var(--paletteD1);
-  --nav-title-color: var(--paletteC5);
+  --nav-bg-color: var(--paletteC1);
+  --nav-fg-color: var(--palette4);
+  --nav-title-color: var(--palette3);
   --nav-active-bg-color: var(--paletteC1);
   --nav-active-fg-color: var(--paletteC2);
-  --nav-hover-color: var(--paletteD5);
-  --main-bg-color: var(--palette5);
+  --nav-hover-color: var(--paletteA1);
+  --main-bg-color: var(--paletteA1);
   --main-fg-color: var(--palette5);
   --main-p-color: var(--palette3);
   --footer-bg-color: var(--paletteD5);
   --footer-fg-color: var(--paletteB1);
-  --link-fg-color: var(--paletteC4);
+  --link-fg-color: var(--palette3);
 }
 
 /* Fonts 
@@ -66,8 +66,9 @@
   */
 :root {
   --font-body: "apple-garamond";
-  --font-nav: "doobie-regular";
-  --font-title: "auto-mission-regular";
-  --font-heading: "doobie-regular";
+  --font-nav: "auto-mission-regular";
+  /* --font-nav: "doobie-regular"; */
+  --font-title: "retro-mono-wide-regular";
+  --font-heading: "retro-mono-wide-regular";
   --font-footer: "retro-mono-wide-regular";
 }

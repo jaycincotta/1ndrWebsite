@@ -1,5 +1,12 @@
 const portfolio = [
   {
+    name: "MtShasta",
+    title: "Mt Shasta",
+    height: 12,
+    width: 12,
+    depth: 2
+  },
+  {
     name: "WatchingYouWatchingUs",
     title: "Watching you Watching us",
     height: 8,

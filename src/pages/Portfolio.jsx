@@ -11,7 +11,7 @@ export default function Portfolio() {
     <h2 className="flex">
       {art.title}
       <span>
-        {art.height}"H&nbsp;x&nbsp;{art.width}W&nbsp;x&nbsp;{art.depth}"D
+        {art.height}"&nbsp;x&nbsp;{art.width}&nbsp;x&nbsp;{art.depth}"
       </span>
     </h2>
   );
