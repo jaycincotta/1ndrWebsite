@@ -54,7 +54,7 @@ a:hover {
   text-align: left;
   display: flex;
   flex-direction: column;
-  background-image: url("/assets/paper.jpg");
+  background-image: url("./paper.jpg");
   background-color: var(--main-bg-color);
   color: var(--main-fg-color);
   min-height: 98vh;
@@ -75,7 +75,7 @@ a:hover {
 **********************************************************/
 header {
   background: var(--nav-bg-color);
-  background-image: url("/assets/paper3.jpg");
+  background-image: url("./paper3.jpg");
   color: var(--nav-fg-color);
   text-align: center;
   width: 100%;
