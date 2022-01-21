@@ -25,7 +25,7 @@ const Burger = ({ isOpen, toggle }) => {
         width="40"
         height="32"
         viewBox="0 0 44 44"
-        fill="#fafafa"
+        fill="#008c99"
         xmlns="http://www.w3.org/2000/svg"
       >
         <animated.rect width="40" height="4" rx="2" style={first} />
